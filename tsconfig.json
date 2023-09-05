@@ -1,0 +1,39 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["dom", "esnext"],
+    "allowJs": true,
+    "declaration": true,
+    "jsx": "react-native",
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "typeRoots": ["@types", "./node_modules/@types"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["./src/**/*", "./src/App.tsx", "./@types"],
+  "exclude": [
+    "./node_modules/*",
+    "./babel.config.js",
+    "./metro.config.js",
+    "./react-native.config.js",
+    "./eslintrc.js",
+    "./index.js"
+  ]
+}
